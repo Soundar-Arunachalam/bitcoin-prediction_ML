@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcoin Prediction API</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f9;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .container h2 {
+            color: #333;
+            margin-top: 0;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .button-container a {
+            text-decoration: none;
+            background: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1em;
+            transition: background 0.3s;
+        }
+        .button-container a:hover {
+            background: #0056b3;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Bitcoin Prediction API</h1>
+    </header>
+    <div class="container">
+        <h2>About the API</h2>
+        <p>This API provides predictions for Bitcoin prices using a machine learning model. You can also access historical data, retrain the model, and evaluate its performance.</p>
+        <h2>Available Endpoints</h2>
+        <ul>
+            <li><strong>POST /predict</strong> - Predict Bitcoin price for a given date.</li>
+            <li><strong>POST /train</strong> - Retrain the model with the current dataset.</li>
+            <li><strong>POST /history</strong> - Get predictions for a range of dates.</li>
+            <li><strong>GET /metrics</strong> - Get model performance metrics (MSE).</li>
+        </ul>
+        <div class="button-container">
+            <a href="https://github.com/" target="_blank">View on GitHub</a>
+        </div>
+    </div>
+    <footer>
+        <p>© 2024 Bitcoin Prediction API | Designed with ❤️</p>
+    </footer>
+</body>
+</html>
